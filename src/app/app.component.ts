@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AppTodo } from './navbar/todo.component';
+import { AppTodo } from './todo/todo.component';
 
 @Component({
   selector: 'app-root',

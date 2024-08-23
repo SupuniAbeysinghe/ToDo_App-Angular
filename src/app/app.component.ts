@@ -10,4 +10,6 @@ import { AppTodo } from './todo/todo.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  isDisable:boolean = false;
 }

@@ -56,7 +56,7 @@ input {
     font-weight: 14px;
 }
 
-button {
+.add {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -80,44 +80,35 @@ ul li {
     position: relative;
 }
 
-ul li::before {
-    content: '';
+.delete-btn {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: #9c230e;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
     position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;
+.checkbox {
+    margin-right: 30px;
+    color: #5b863f;
+    font-size: 20px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
 }
 
-ul li span {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: "#555";
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-ul li span:hover {
-    background: #edeef0;
+.list {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }

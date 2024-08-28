@@ -10,7 +10,7 @@
         <ul>
             @for (todo of todos; track todo) {
 
-            <li class="list"><input type="checkbox" [(ngModel)]="todo.completed" class="checkbox" /> {{todo.title}} <button class="delete-btn" (click)="onDelete(todo)">Delete</button></li>
+            <li class="list"> <input type="checkbox" [(ngModel)]="todo.completed" (change)="onCheckboxChange(todo)" class="checkbox" /> {{todo.title}} <button class="delete-btn" (click)="onDelete(todo)">Delete</button></li>
             }
         </ul>
 
